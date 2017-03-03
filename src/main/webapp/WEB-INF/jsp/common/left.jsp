@@ -11,7 +11,7 @@
         <!-- menu prile quick info -->
         <div class="profile">
             <div class="profile_pic">
-                <img src="/resource/images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="/web/resource/images/img.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
                 <span>Welcome,</span>
@@ -67,4 +67,3 @@
         <!-- /menu footer buttons -->
     </div>
 </div>
-
