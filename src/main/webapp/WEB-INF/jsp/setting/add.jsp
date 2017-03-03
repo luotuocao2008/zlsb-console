@@ -15,20 +15,20 @@
 
     <!-- Bootstrap core CSS -->
 
-    <link href="/resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/web/resource/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="/resource/fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/resource/css/animate.min.css" rel="stylesheet">
+    <link href="/web/resource/fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/web/resource/css/animate.min.css" rel="stylesheet">
 
     <!-- Custom styling plus plugins -->
-    <link href="/resource/css/custom.css" rel="stylesheet">
-    <link href="/resource/css/icheck/flat/green.css" rel="stylesheet">
+    <link href="/web/resource/css/custom.css" rel="stylesheet">
+    <link href="/web/resource/css/icheck/flat/green.css" rel="stylesheet">
     <!-- select2 -->
     <link href="/resource/css/select/select2.min.css" rel="stylesheet">
     <!-- switchery -->
     <link rel="stylesheet" href="/resource/css/switchery/switchery.min.css" />
 
-    <script src="/resource/js/jquery.min.js"></script>
+    <script src="/web/resource/js/jquery.min.js"></script>
 
     <!--[if lt IE 9]>
     <script src="../assets/js/ie8-responsive-file-warning.js"></script>
@@ -188,12 +188,12 @@
 
 
 <!-- bootstrap progress js -->
-<script src="/resource/js/progressbar/bootstrap-progressbar.min.js"></script>
-<script src="/resource/js/nicescroll/jquery.nicescroll.min.js"></script>
+<script src="/web/resource/js/progressbar/bootstrap-progressbar.min.js"></script>
+<script src="/web/resource/js/nicescroll/jquery.nicescroll.min.js"></script>
 <!-- icheck -->
-<script src="/resource/js/icheck/icheck.min.js"></script>
+<script src="/web/resource/js/icheck/icheck.min.js"></script>
 
-<script src="/resource/js/custom.js"></script>
+<script src="/web/resource/js/custom.js"></script>
 
 <script type="text/javascript">
     $(function () {
