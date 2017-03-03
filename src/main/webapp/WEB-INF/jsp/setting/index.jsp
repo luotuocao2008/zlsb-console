@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Admin ZSLB Console </title>
+    <title>Admin Console </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -150,7 +150,6 @@
                 </div>
                 <!-- /content -->
 
-
                 <!-- footer content -->
                     <jsp:include page="../common/footer.jsp"></jsp:include>
                 <!-- /footer content -->
@@ -194,7 +193,6 @@
             window.location.href = '<c:url value="/setting/add"/>';
         }
     </script>
-
 
     <!-- /datepicker -->
     <!-- /footer content -->
