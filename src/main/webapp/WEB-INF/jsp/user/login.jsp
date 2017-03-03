@@ -24,9 +24,9 @@
     <link href="/web/resource/css/icheck/flat/green.css" rel="stylesheet">
 
 
-    <script src="<c:url value="/web/resource/js/jquery.min.js"/>"></script>
-    <script src="<c:url value="/web/resource/module/bootstrap/js/bootstrap.min.js"/>"></script>
-    <script src="<c:url value="/web/resource/module/jquery-cookie/jquery.cookie.js"/>"></script>
+    <script src="<c:url value="/resource/js/jquery.min.js"/>"></script>
+    <script src="<c:url value="/resource/module/bootstrap/js/bootstrap.min.js"/>"></script>
+    <script src="<c:url value="/resource/module/jquery-cookie/jquery.cookie.js"/>"></script>
 
     <%--<!--[if lt IE 9]>--%>
         <%--<script src="../assets/js/ie8-responsive-file-warning.js"></script>--%>
