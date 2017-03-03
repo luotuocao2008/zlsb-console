@@ -26,7 +26,7 @@ public class SettingController {
 //
 //        List<Setting> settings = settingsService.selectAllOpen();
 
-        String url="http://192.168.1.116:8500/v1/catalog/nodes?dc=dc1";
+        String url="http://localhost:8500/v1/catalog/nodes?dc=dc1";
         String strResult= HttpRequestUtils.httpGet(url);
         JSONArray jsonArray = JSONArray.fromObject(strResult);
         List list =JsonUtil.jsonToList(jsonArray);
