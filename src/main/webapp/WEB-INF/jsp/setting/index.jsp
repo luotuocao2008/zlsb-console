@@ -168,14 +168,14 @@
         <div id="notif-group" class="tabbed_notifications"></div>
     </div>
 
-    <script src="/resource/js/bootstrap.min.js"></script>
+    <script src="/web/resource/js/bootstrap.min.js"></script>
 
     <!-- bootstrap progress js -->
-    <script src="/resource/js/progressbar/bootstrap-progressbar.min.js"></script>
-    <script src="/resource/js/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="/web/resource/js/progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="/web/resource/js/nicescroll/jquery.nicescroll.min.js"></script>
     <!-- icheck -->
-    <script src="/resource/js/icheck/icheck.min.js"></script>
-    <script src="/resource/js/custom.js"></script>
+    <script src="/web/resource/js/icheck/icheck.min.js"></script>
+    <script src="/web/resource/js/custom.js"></script>
 
     <script type="text/javascript">
         function deletenode(node) {
