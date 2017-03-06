@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Admin ZSLB Console </title>
+    <title>Admin Console </title>
 
     <!-- Bootstrap core CSS -->
 
@@ -22,12 +22,12 @@
 
     <!-- Custom styling plus plugins -->
     <link href="/resource/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/resource/css/maps/jquery-jvectormap-2.0.1.css" />
+    <link rel="stylesheet" type="text/css" href="/web/resource/css/maps/jquery-jvectormap-2.0.1.css" />
     <link href="/resource/css/icheck/flat/green.css" rel="stylesheet" />
     <link href="/resource/css/floatexamples.css" rel="stylesheet" type="text/css" />
 
     <script src="/resource/js/jquery.min.js"></script>
-    <%--<script src="/resource/js/nprogress.js"></script>--%>
+    <%--<script src="/web/resource/js/nprogress.js"></script>--%>
     <%--<script>--%>
         <%--NProgress.start();--%>
     <%--</script>--%>
@@ -150,7 +150,6 @@
                 </div>
                 <!-- /content -->
 
-
                 <!-- footer content -->
                     <jsp:include page="../common/footer.jsp"></jsp:include>
                 <!-- /footer content -->
@@ -194,7 +193,6 @@
             window.location.href = '<c:url value="/setting/add"/>';
         }
     </script>
-
 
     <!-- /datepicker -->
     <!-- /footer content -->

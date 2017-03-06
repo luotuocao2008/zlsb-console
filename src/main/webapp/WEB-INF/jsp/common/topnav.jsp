@@ -53,7 +53,7 @@
                         <li>
                             <a>
                                             <span class="image">
-                                        <img src="/resource/images/img.jpg" alt="Profile Image" />
+                                        <img src="/web/resource/images/img.jpg" alt="Profile Image" />
                                     </span>
                                 <span>
                                         <span>John Smith</span>
