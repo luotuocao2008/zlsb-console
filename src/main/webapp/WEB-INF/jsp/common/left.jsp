@@ -28,9 +28,25 @@
             <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                    <li><a><i class="fa fa-home"></i> 配置 <span class="fa fa-chevron-down"></span></a>
+                    <li>
+                        <a><i class="fa fa-home"></i> 配置管理 <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu" style="display: none">
-                            <li><a href="<c:url value="/setting/"/>">配置管理</a>
+                            <li><a href="<c:url value="/setting/"/>通用</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav child_menu" style="display: none">
+                            <li><a href="<c:url value="/setting/"/>通用</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav child_menu" style="display: none">
+                            <li><a href="<c:url value="/setting/"/>前端</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav child_menu" style="display: none">
+                            <li><a href="<c:url value="/setting/"/>后端</a>
                             </li>
 
                         </ul>
