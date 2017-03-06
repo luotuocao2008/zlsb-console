@@ -14,14 +14,14 @@
 
     <!-- Bootstrap core CSS -->
 
-    <link href="/web/resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resource/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="/web/resource/fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/web/resource/css/animate.min.css" rel="stylesheet">
+    <link href="/resource/fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/resource/css/animate.min.css" rel="stylesheet">
 
     <!-- Custom styling plus plugins -->
-    <link href="/web/resource/css/custom.css" rel="stylesheet">
-    <link href="/web/resource/css/icheck/flat/green.css" rel="stylesheet">
+    <link href="/resource/css/custom.css" rel="stylesheet">
+    <link href="/resource/css/icheck/flat/green.css" rel="stylesheet">
 
 
     <script src="<c:url value="/resource/js/jquery.min.js"/>"></script>
