@@ -18,6 +18,8 @@ public class HttpRequestUtils {
 
     private static Logger logger =Logger.getLogger (HttpRequestUtils.class);    //日志记录
 
+    private static String charset = "UTF-8";
+
     /**
      * httpPost
      * @param url  路径
@@ -43,19 +45,19 @@ public class HttpRequestUtils {
         try {
             if (null != jsonParam) {
                 //解决中文乱码问题
-                StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");
-                entity.setContentEncoding("UTF-8");
+                StringEntity entity = new StringEntity(jsonParam.toString(), charset);
+                entity.setContentEncoding(charset);
                 entity.setContentType("application/json");
                 method.setEntity(entity);
             }
             HttpResponse result = httpClient.execute(method);
-            url = URLDecoder.decode(url, "UTF-8");
+            url = URLDecoder.decode(url, charset);
             /**请求发送成功，并得到响应**/
             if (result.getStatusLine().getStatusCode() == 200) {
                 String str = "";
                 try {
                     /**读取服务器返回过来的json字符串数据**/
-                    str = EntityUtils.toString(result.getEntity());
+                    str = EntityUtils.toString(result.getEntity(),charset);
                     if (noNeedResponse) {
                         return null;
                     }
@@ -85,18 +87,18 @@ public class HttpRequestUtils {
         try {
             if (null != jsonParam) {
                 //解决中文乱码问题
-                StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");
-                entity.setContentEncoding("UTF-8");
+                StringEntity entity = new StringEntity(jsonParam.toString(), charset);
+                entity.setContentEncoding(charset);
                 entity.setContentType("application/json");
                 method.setEntity(entity);
             }
             HttpResponse result = httpClient.execute(method);
-            url = URLDecoder.decode(url, "UTF-8");
+            url = URLDecoder.decode(url, charset);
             /**请求发送成功，并得到响应**/
             if (result.getStatusLine().getStatusCode() == 200) {
                 try {
                     /**读取服务器返回过来的json字符串数据**/
-                    str = EntityUtils.toString(result.getEntity());
+                    str = EntityUtils.toString(result.getEntity(),charset);
 
                 } catch (Exception e) {
                     logger.error("put请求提交失败:" + url, e);
@@ -124,10 +126,10 @@ public class HttpRequestUtils {
             /**请求发送成功，并得到响应**/
             if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                 /**读取服务器返回过来的json字符串数据**/
-                 strResult = EntityUtils.toString(response.getEntity());
+                 strResult = EntityUtils.toString(response.getEntity(),charset);
                 /**把json字符串转换成json对象**/
 //                    jsonResult = JSONObject.fromObject(str);
-                url = URLDecoder.decode(url, "UTF-8");
+                url = URLDecoder.decode(url, charset);
             } else {
                 logger.error("get请求提交失败:" + url);
             }

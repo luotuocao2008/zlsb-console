@@ -1,6 +1,7 @@
 package com.zonli.zslb.controller;
 
 import com.zonli.zslb.common.model.Settings;
+import com.zonli.zslb.util.ConfUtil;
 import com.zonli.zslb.util.HttpRequestUtils;
 import com.zonli.zslb.util.JsonUtil;
 import net.sf.json.JSONArray;
@@ -18,6 +19,8 @@ import java.util.Map;
 @RequestMapping(value = "/setting")
 public class SettingController {
 
+    private String consulURL= ConfUtil.getProperty("consul.address")+":"+ConfUtil.getProperty("consul.port");
+
 	@RequestMapping(value="/")
 	public ModelAndView index(Integer p){
 //        Page page = new Page();
@@ -25,13 +28,18 @@ public class SettingController {
 //        page.setUrl("/?p=");
 //
 //        List<Setting> settings = settingsService.selectAllOpen();
-
-        String url="http://192.168.1.116:8500/v1/catalog/nodes?dc=dc1";
-        String strResult= HttpRequestUtils.httpGet(url);
-        JSONArray jsonArray = JSONArray.fromObject(strResult);
-        List list =JsonUtil.jsonToList(jsonArray);
         Map<String, Object> map = new HashMap<>();
-        map.put("lists", list);
+
+        String url=consulURL+"/v1/catalog/nodes?dc=dc1";
+        String strResult= HttpRequestUtils.httpGet(url);
+        if(!StringUtils.isEmpty(strResult)) {
+            JSONArray jsonArray = JSONArray.fromObject(strResult);
+            List list = JsonUtil.jsonToList(jsonArray);
+            map.put("lists", list);
+        }else {
+            map.put("message", "连接consul失败！");
+
+        }
         return new ModelAndView("setting/index", map);
 	}
 
@@ -59,7 +67,7 @@ public class SettingController {
         serviceObject.put("Port",settings.getServicePort());
         jsonParam.put("Service",serviceObject);
 
-        String url="http://192.168.1.116:8500/v1/catalog/register";
+        String url=consulURL+"/v1/catalog/register";
         String strResult= HttpRequestUtils.httpPut(url,jsonParam);
         if(strResult.equals("true")) {
             resultMap.put("success", true);
@@ -81,7 +89,7 @@ public class SettingController {
         if(!StringUtils.isEmpty(node)){
             JSONObject jsonParam = new JSONObject();
             jsonParam.put("Node",node);
-            String url="http://192.168.1.116:8500/v1/catalog/deregister";
+            String url=consulURL+"/v1/catalog/deregister";
             String strResult= HttpRequestUtils.httpPut(url,jsonParam);
             if(strResult.equals("true")) {
                 resultMap.put("success", true);

@@ -199,9 +199,7 @@
     $(function () {
         var url ='<c:url value="/setting/"/>';
         $('#sidebar-menu a[href="' + url + '"]').parent('li').addClass('current-page');
-        $('#sidebar-menu a').filter(function () {
-            return this.href == url;
-        }).parent('li').addClass('current-page').parent('ul').slideDown().parent().addClass('active');
+        $('#sidebar-menu a[href="' + url + '"]').parent('li').addClass('current-page').parent('ul').slideDown().parent().addClass('active');
     });
 
     function saveNode() {

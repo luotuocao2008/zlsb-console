@@ -73,8 +73,8 @@
                         <div class="title_left">
                             <h3>
                                 配置管理
-                                <small>
-                                    <%--Some examples to get you started--%>
+                                <small style="color: red">
+                                    <c:if test="${not empty message}">${message}</c:if><%--Some examples to get you started--%>
                                 </small>
                             </h3>
                         </div>

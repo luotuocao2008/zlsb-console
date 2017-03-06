@@ -11,6 +11,11 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+
+
+    <!-- 引入配置文件 -->
+    <context:property-placeholder location="classpath:/conf.properties" ignore-resource-not-found="true" />
+
     <!-- 注解驱动 -->
     <!--<mvc:annotation-driven conversion-service="conversionService"/>-->
     <!-- 通过annotation-driven可以替代下边的处理器映射器和适配器 -->
