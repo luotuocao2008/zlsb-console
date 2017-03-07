@@ -30,9 +30,12 @@
                 <ul class="nav side-menu">
                     <li><a><i class="fa fa-home"></i> 配置 <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu" style="display: none">
-                            <li><a href="<c:url value="/setting/"/>">配置管理</a>
+                            <li><a href="<c:url value="/setting/keys/global"/>">全局</a>
                             </li>
-
+                            <li><a href="<c:url value="/setting/keys/frontend"/>">前端</a>
+                            </li>
+                            <li><a href="<c:url value="/setting/"/>">后端</a>
+                            </li>
                         </ul>
                     </li>
                     <li><a><i class="fa fa-edit"></i> 监控 <span class="fa fa-chevron-down"></span></a>

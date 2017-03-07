@@ -21,11 +21,11 @@
 <!-- Custom styling plus plugins -->
 <link href="/resource/css/custom.css" rel="stylesheet">
 <link href="/resource/css/icheck/flat/green.css" rel="stylesheet">
-
+<link rel="stylesheet" type="text/css" href="/resource/css/maps/jquery-jvectormap-2.0.1.css" />
+<link href="/resource/css/floatexamples.css" rel="stylesheet" type="text/css" />
 
 <script src="<c:url value="/resource/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resource/module/bootstrap/js/bootstrap.min.js"/>"></script>
-<script src="<c:url value="/resource/module/jquery-cookie/jquery.cookie.js"/>"></script>
 
 <%--<!--[if lt IE 9]>--%>
 <%--<script src="../assets/js/ie8-responsive-file-warning.js"></script>--%>

@@ -102,4 +102,25 @@ public class SettingController {
         return resultMap;
     }
 
+    /**
+     *
+     * @param type
+     * @return
+     */
+    @RequestMapping(value = "/keys/{type}",method = RequestMethod.GET)
+    public ModelAndView keylist(@PathVariable String type){
+        Map<String, Object> map = new HashMap<>();
+        String url=consulURL+"/v1/kv/"+type+"/?recurse";
+        String strResult= HttpRequestUtils.httpGet(url);
+        if(!StringUtils.isEmpty(strResult)) {
+            JSONArray jsonArray = JSONArray.fromObject(strResult);
+            List list = JsonUtil.jsonToList(jsonArray);
+            map.put("lists", list);
+        }else {
+            map.put("message", "连接consul失败！");
+
+        }
+        return new ModelAndView("/setting/global",map);
+    }
+
 }

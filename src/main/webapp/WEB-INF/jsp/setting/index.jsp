@@ -1,50 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
-<html lang="zh">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Admin ZSLB Console </title>
-
-    <!-- Bootstrap core CSS -->
-
-    <link href="/resource/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="/resource/fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/resource/css/animate.min.css" rel="stylesheet">
-
-    <!-- Custom styling plus plugins -->
-    <link href="/resource/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/resource/css/maps/jquery-jvectormap-2.0.1.css" />
-    <link href="/resource/css/icheck/flat/green.css" rel="stylesheet" />
-    <link href="/resource/css/floatexamples.css" rel="stylesheet" type="text/css" />
-
-    <script src="/resource/js/jquery.min.js"></script>
-    <%--<script src="/resource/js/nprogress.js"></script>--%>
-    <%--<script>--%>
-        <%--NProgress.start();--%>
-    <%--</script>--%>
-    
-    <!--[if lt IE 9]>
-        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-</head>
-
-
+<jsp:include page="../common/header.jsp"></jsp:include>
 <body class="nav-md">
 
     <div class="container body">
@@ -54,7 +11,6 @@
 
             <!-- left menu -->
             <jsp:include page="../common/left.jsp"></jsp:include>
-
             <!-- /left menu -->
 
 
@@ -168,7 +124,6 @@
         <div id="notif-group" class="tabbed_notifications"></div>
     </div>
 
-    <script src="/resource/js/bootstrap.min.js"></script>
 
     <!-- bootstrap progress js -->
     <script src="/resource/js/progressbar/bootstrap-progressbar.min.js"></script>
