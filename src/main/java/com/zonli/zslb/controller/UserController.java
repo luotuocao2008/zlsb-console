@@ -34,10 +34,12 @@ public class UserController {
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public ModelAndView logout(HttpSession httpSession) {
+        if(httpSession.getAttribute("sessionUser")!=null) {
+            httpSession.removeAttribute("sessionUser");
+            httpSession.invalidate();
+        }
         SecurityUtils.getSubject().logout();
-        httpSession.removeAttribute("sessionUser");
-        httpSession.invalidate();
-        return new ModelAndView("user/logout");
+        return new ModelAndView("user/login");
     }
 
 

@@ -773,11 +773,11 @@ li.current-page a {
     width: 100%;
     color: #ECF0F1 !important;
     margin-left: 0 !important;
-    line-height: 59px;
+    line-height: 89px;
     display: block;
     height: 55px;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 .site_title:hover,
@@ -884,10 +884,17 @@ li.current-page a {
 .x_content canvas {}
 
 footer {
-    background: #fff;
-    padding: 5px 20px 0;
+    /*background: #fff;*/
+    /*padding: 5px 20px 0;*/
+    /*height: 45px;*/
+    /*margin: 0 -17px;*/
+    background: #fff none repeat scroll 0 0;
+    padding: 15px 20px;
     height: 45px;
-    margin: 0 -17px;
+    margin: 0 -20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .tile-stats.sparkline {

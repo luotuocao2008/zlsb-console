@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 
-<jsp:include page="../common/header.jsp"></jsp:include>
-
-
+<%@include file="../common/header.jsp"%>
 
 <body style="background:#F7F7F7;">
     
@@ -87,6 +83,7 @@
     </div>
 
 </body>
+<script src="<c:url value="/resource/module/jquery-cookie/jquery.cookie.js"/>"></script>
 
 <script type="text/javascript">
     $(function () {
